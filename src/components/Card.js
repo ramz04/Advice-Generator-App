@@ -24,9 +24,9 @@ function Card() {
 
   return (
     <div className='flex items-center justify-center p-4 h-full relative '>
-        <div className='bg-DarkGrayishBlue p-6 rounded-xl'>
+        <div className='bg-DarkGrayishBlue md:w-[500px] p-6 rounded-xl'>
             <h2 className='text-center text-sm uppercase tracking-widest text-NeonGreen'> Advice # {adviceData.id}</h2>
-            <p className='text-center text-[28px] text-LightCyan mt-3 '>"{adviceData.advice}"</p>
+            <p className='text-center text-[28px] text-LightCyan mt-3 md:break-all '>"{adviceData.advice}"</p>
             <div className='flex justify-center'>
               <picture>
                   <source media='(min-width: 640px)' srcSet={patterndividerdesktop} />
